@@ -1,7 +1,7 @@
 <img align="right" src="https://github.com/ada-school/module-template/blob/main/ada.png">
 
 
-## Android Kotlin Coding Challenge 💻
+## Android Kotlin Mentor Coding Challenge 💻
 
 Thank you 🙏 for taking the time to implement this coding challenge to build a small Android App using *Kotlin*, *Retrofit* and *Corroutines*.
 
