@@ -1,7 +1,7 @@
 <img align="right" src="https://github.com/ada-school/module-template/blob/main/ada.png">
 
 
-## Android Kotlin Mentor Coding Challenge 💻
+## Android Kotlin Mentor 👩‍💻 👨‍💻 Coding Challenge
 
 Thank you 🙏 for taking the time to implement this coding challenge to build a small Android App using *Kotlin*, *Retrofit* and *Corroutines*.
 
@@ -12,7 +12,7 @@ Thank you 🙏 for taking the time to implement this coding challenge to build a
 * Create and share the Repository used to store your solution.
 
 
-## Coding Challenge 👩‍💻 👨‍💻
+## Coding Challenge 💻
 
 Your friend is the owner of Cinematrix, a very traditional cinema. She is not able to have an updated list of the movies currently playing. 
 Because you are an Android Developer, you want to help her building a prototype Android App, that will help her understand the usage of technology, and how she could centralize the data using an API(Backend), and how fast and simple you could query the Movies' information on an Android App. 
