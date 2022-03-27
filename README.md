@@ -18,14 +18,14 @@ Your friend is the owner of Cinematrix, a very traditional cinema. She is not ab
 Because you are an Android Developer, you want to help her building a prototype Android App, that will help her understand the usage of technology, and how she could centralize the data using an API(Backend), and how fast and simple you could query the Movies' information on an Android App. 
 
 ## Design and implment an Android App that:
-* Let's you query the [OMDb API](https://www.omdbapi.com/) database, for example search for movies that title includes the word 'batman':
+* Allows you to query the [OMDb API](https://www.omdbapi.com/) database, for example search for movies that title includes the word 'batman':
   * https://www.omdbapi.com/?apikey=a9a1b302&s=batman
   * Note: feel free to use our apikey *a9a1b302* or [create your own](https://www.omdbapi.com/apikey.aspx)
 * Displays a list of cards with the basic information about the movies found:
   * Title
   * Year
   * Poster
-* Let's you click on the Movie and this takes you to a detail view where you can see more information about the Movie:
+* Allows you to click on the Movie and this takes you to a detail view where you can see more information about the Movie:
   * Details API Query Example: https://www.omdbapi.com/?apikey=a9a1b302&i=tt0372784
   * Addional Movie Detail View should contain at least the following information:
     * Title   
