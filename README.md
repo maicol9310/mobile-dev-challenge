@@ -1,9 +1,9 @@
 <img align="right" src="https://github.com/ada-school/module-template/blob/main/ada.png">
 
 
-## Android Kotlin Mentor 👩🏻‍💻 👨🏾‍💻 👨🏻‍💻 👩🏽‍💻 Coding Challenge
+## Mobile Dev Mentor 👩🏻‍💻 👨🏾‍💻 👨🏻‍💻 👩🏽‍💻 Coding Challenge
 
-Thank you 🙏 for taking the time to implement this coding challenge to build a small Android App using *Kotlin*, *Retrofit* and *Corroutines*.
+Thank you 🙏 for taking the time to complete this coding challenge to build a small Mobile App using your prefered programming language and frameworks/libraries.
 
 ## Conditions
 
@@ -15,7 +15,7 @@ Thank you 🙏 for taking the time to implement this coding challenge to build a
 ## Coding Challenge 💻
 
 Your friend is the owner of Cinematrix, a very traditional cinema. She is not able to have an updated list of the movies currently playing. 
-Because you are an Android Developer, you want to help her building a prototype Android App, that will help her understand the usage of technology, and how she could centralize the data using an API(Backend), and how fast and simple you could query the Movies' information on an Android App. 
+Because you are an Mobile Developer, you want to help her building a prototype App, that will help her understand the usage of technology, and how she could centralize the data using an API(Backend), and how fast and simple you could query the Movies' information on the App. 
 
 ## Design and implment an Android App that:
 * Allows you to query the [OMDb API](https://www.omdbapi.com/) database, for example search for movies that title includes the word 'batman':
@@ -44,18 +44,13 @@ Because you are an Android Developer, you want to help her building a prototype 
 * Correct ussage of Data types.
   
 ## Nice to Have
-* Usage of Depdencies injection with Hilt
-* Connect with a the API using Corroutines.
-* Android Navigation.
+* Usage of design patterns (depdencies injection, architecture, builder, any other)
 
 
-# Desired technology stack:
-* Kotlin 
-* Retrofit
-* Jetpack(ROOM, Hilt, Navigation)
+
 
 ## Submit your solution
 
-Once you're done, please send us an email to [tech@ada-school.org](mailto:tech@ada-school.org) with the subject: TECH_CHALLENGE_[YOUR NAME] and do not forget to include the link to your repository with the solution. After you submit your code, we will review it and contact you to discuss next steps. 
+Once you're done, please send us an email to [tech@ada-school.org](mailto:tech@ada-school.org) with the subject: TECH_MOBILE_CHALLENGE_[YOUR NAME] and do not forget to include the link to your repository with the solution. After you submit your code, we will review it and contact you to discuss next steps. 
 
 Good luck! 💪
