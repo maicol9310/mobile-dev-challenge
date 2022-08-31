@@ -17,7 +17,7 @@ Thank you 🙏 for taking the time to complete this coding challenge to build a 
 Your friend is the owner of Cinematrix, a very traditional cinema. She is not able to have an updated list of the movies currently playing. 
 Because you are an Mobile Developer, you want to help her building a prototype App, that will help her understand the usage of technology, and how she could centralize the data using an API(Backend), and how fast and simple you could query the Movies' information on the App. 
 
-## Design and implment a Mobile App that:
+## Design and implement a Mobile App that:
 * Allows you to query the [OMDb API](https://www.omdbapi.com/) database, for example search for movies that title includes the word 'batman':
   * https://www.omdbapi.com/?apikey=a9a1b302&s=batman
   * Note: feel free to use our apikey *a9a1b302* or [create your own](https://www.omdbapi.com/apikey.aspx)
