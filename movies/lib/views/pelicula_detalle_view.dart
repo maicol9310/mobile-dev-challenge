@@ -8,14 +8,7 @@ class PeliculaDetalleScreen extends StatelessWidget {
 
   bool isImageURL(String url) {
     final fileExtension = url.split('.').last.toLowerCase();
-    final imageExtensions = [
-      'jpg',
-      'jpeg',
-      'png',
-      'gif',
-      'bmp',
-      'webp'
-    ]; // Agrega más extensiones si es necesario
+    final imageExtensions = ['jpg', 'jpeg', 'png', 'gif', 'bmp', 'webp'];
     return imageExtensions.contains(fileExtension);
   }
 
@@ -24,7 +17,6 @@ class PeliculaDetalleScreen extends StatelessWidget {
     final peliculaDetalleViewModel =
         Provider.of<PeliculaDetalleViewModel>(context);
 
-    // Cargar los detalles de la película al iniciar la vista
     peliculaDetalleViewModel.detallePelicula(imdbID);
 
     return Scaffold(
@@ -38,17 +30,16 @@ class PeliculaDetalleScreen extends StatelessWidget {
             if (viewModel.detalles != null) {
               final detalle = viewModel.detalles;
               if (isImageURL(detalle.poster)) {
-                // La URL de la imagen es válida, muestra la imagen
                 return Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children: [
                     SizedBox(
-                      width: 200, // Ajusta el ancho según tus necesidades
-                      height: 300, // Ajusta la altura según tus necesidades
+                      width: 200,
+                      height: 300,
                       child: Image.network(
                         detalle.poster,
-                        fit: BoxFit.cover, // Ajusta el ajuste de la imagen
+                        fit: BoxFit.cover,
                       ),
                     ),
                     Text('Título: ${detalle.title}'),
@@ -59,11 +50,10 @@ class PeliculaDetalleScreen extends StatelessWidget {
                   ],
                 );
               } else {
-                // La URL de la imagen no es válida
-                return Text('La URL de la imagen no es válida');
+                return const Text('La URL de la imagen no es válida');
               }
             } else {
-              return const CircularProgressIndicator(); // Muestra un indicador de carga mientras se cargan los detalles
+              return const CircularProgressIndicator();
             }
           },
         ),

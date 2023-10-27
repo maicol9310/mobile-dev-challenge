@@ -42,12 +42,10 @@ class PeliculaListScreen extends StatelessWidget {
                   subtitle: Text(pelicula.year),
                   leading: Image.network(pelicula.poster),
                   onTap: () {
-                    // Navega a la vista de detalle con el imdbID
                     Navigator.of(context).push(
                       MaterialPageRoute(
                         builder: (context) => PeliculaDetalleScreen(
-                          imdbID: pelicula
-                              .imdbID, // Pasa el imdbID a la vista de detalle
+                          imdbID: pelicula.imdbID,
                         ),
                       ),
                     );
