@@ -1,19 +1,22 @@
 import 'package:flutter/material.dart';
+import 'package:movies/views/pelicula_list.dart';
+import 'package:provider/provider.dart';
+import 'package:movies/viewmodels/pelicula_viewmodel.dart';
 
 void main() {
-  runApp(const MainApp());
+  runApp(const MyApp());
 }
 
-class MainApp extends StatelessWidget {
-  const MainApp({super.key});
+class MyApp extends StatelessWidget {
+  const MyApp({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
-      home: Scaffold(
-        body: Center(
-          child: Text('Hello World!'),
-        ),
+    return ChangeNotifierProvider(
+      create: (context) => PeliculaViewModel(),
+      child: const MaterialApp(
+        debugShowCheckedModeBanner: false,
+        home: PeliculaList(),
       ),
     );
   }
