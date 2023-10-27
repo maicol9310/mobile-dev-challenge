@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:movies/views/pelicula_detalle_view.dart';
 import 'package:provider/provider.dart';
 import 'package:movies/viewmodels/pelicula_viewmodel.dart';
 
-class PeliculaList extends StatelessWidget {
-  const PeliculaList({super.key});
+class PeliculaListScreen extends StatelessWidget {
+  const PeliculaListScreen({Key? key});
 
   @override
   Widget build(BuildContext context) {
@@ -20,17 +21,14 @@ class PeliculaList extends StatelessWidget {
           Padding(
             padding: const EdgeInsets.all(16.0),
             child: TextField(
-              controller:
-                  peliculasQueryController, // Asigna el controlador al campo de texto
+              controller: peliculasQueryController,
               decoration: const InputDecoration(labelText: 'Película:'),
             ),
           ),
           ElevatedButton(
             onPressed: () {
-              final query =
-                  peliculasQueryController.text; // Obtiene el valor ingresado
-              peliculaViewModel.buscarPeliculas(
-                  query); // Realiza la búsqueda al presionar el botón
+              final query = peliculasQueryController.text;
+              peliculaViewModel.buscarPeliculas(query);
             },
             child: const Text('Buscar'),
           ),
@@ -43,6 +41,17 @@ class PeliculaList extends StatelessWidget {
                   title: Text(pelicula.title),
                   subtitle: Text(pelicula.year),
                   leading: Image.network(pelicula.poster),
+                  onTap: () {
+                    // Navega a la vista de detalle con el imdbID
+                    Navigator.of(context).push(
+                      MaterialPageRoute(
+                        builder: (context) => PeliculaDetalleScreen(
+                          imdbID: pelicula
+                              .imdbID, // Pasa el imdbID a la vista de detalle
+                        ),
+                      ),
+                    );
+                  },
                 );
               },
             ),
